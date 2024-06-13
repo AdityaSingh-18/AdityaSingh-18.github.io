@@ -1,1 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px;
+}
+.menu {
+    flex: 1 1 calc(33.333% - 40px);
+    margin:10px;
+    background-color: gray;
+}
+.ok {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.title {
+    width: 120px;
+    height: 50px;
+    margin: 0;
+    padding-top: 22px;
+    text-align: center;
+}
+.one{
+    background-color: beige;
+}
+.two{
+    background-color: blueviolet;
+}
+.three{
+    background-color: salmon;
+}
+p {
+    padding: 5px 15px;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        flex: 1 1 calc(50% - 40px);
+    }
+    .menu:nth-child(3) {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        flex: 1 1 100%;
+    }
+}
 
